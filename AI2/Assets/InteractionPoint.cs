@@ -9,14 +9,12 @@ public class InteractionPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // 1. First, check if it's actually the Player touching the trigger
-        if (other.CompareTag("Player"))
+        // STEP 1: Check if the thing touching us is EITHER the Player OR the AI
+        if (other.CompareTag("Player") || other.CompareTag("AI"))
         {
-            // 2. CHECK FOR BAKERY
+            // STEP 2: Handle the Bakery Logic
             if (currentPoint == LocationType.Bakery)
             {
-                Debug.Log("Player touched the Bakery!");
-
                 if (Collectable.hasEgg && Collectable.hasGloomroot)
                 {
                     Collectable.hasEgg = false;
@@ -26,16 +24,12 @@ public class InteractionPoint : MonoBehaviour
                     if (rewardToSpawn != null)
                     {
                         rewardToSpawn.SetActive(true);
-                        Debug.Log("Success: Biscuit Spawned!");
+                        Debug.Log("Bakery: " + other.tag + " delivered items. Biscuit spawned!");
                     }
-                }
-                else
-                {
-                    Debug.Log("Bakery: Missing items! Egg: " + Collectable.hasEgg + " | Root: " + Collectable.hasGloomroot);
                 }
             }
 
-            // 3. CHECK FOR CHARON
+            // STEP 3: Handle the Charon Logic
             else if (currentPoint == LocationType.Charon)
             {
                 if (Collectable.hasBiscuit && Collectable.hasLiquidFire)
@@ -56,7 +50,7 @@ public class InteractionPoint : MonoBehaviour
                 }
             }
 
-            // 4. CHECK FOR COW
+            // STEP 4: Handle the Cow Logic
             else if (currentPoint == LocationType.CowPasture)
             {
                 if (Collectable.hasFeed)
