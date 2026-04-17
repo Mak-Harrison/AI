@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 209161779}
   m_Layer: 0
   m_Name: GloomRoot
-  m_TagString: Untagged
+  m_TagString: Gloomroot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 357257327}
   m_Layer: 0
   m_Name: Egg
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1126,6 +1126,9 @@ PrefabInstance:
     - {fileID: 65702495048144492, guid: e199bcb224c4969479937244d1dcd92f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e199bcb224c4969479937244d1dcd92f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 935918458}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: e199bcb224c4969479937244d1dcd92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 935918456}
@@ -1150,8 +1153,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a90042e8c751d4d84cf38065859216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPoint: 1
+  currentPoint: 0
   rewardToSpawn: {fileID: 1646773496}
+--- !u!1 &935918457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e199bcb224c4969479937244d1dcd92f, type: 3}
+  m_PrefabInstance: {fileID: 935918454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &935918458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935918457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a90042e8c751d4d84cf38065859216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPoint: 0
+  rewardToSpawn: {fileID: 1646773496}
+--- !u!4 &935918459 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e199bcb224c4969479937244d1dcd92f, type: 3}
+  m_PrefabInstance: {fileID: 935918454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &935918460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1327,7 +1354,7 @@ Transform:
   m_GameObject: {fileID: 940570814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.54, z: 0.3}
+  m_LocalPosition: {x: -0.18, y: 0.54, z: 2.79}
   m_LocalScale: {x: 0.33, y: 0.38, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1706,7 +1733,7 @@ GameObject:
   - component: {fileID: 1327688565}
   m_Layer: 0
   m_Name: Soul
-  m_TagString: Untagged
+  m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2016,7 +2043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a90042e8c751d4d84cf38065859216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPoint: 0
+  currentPoint: 2
   rewardToSpawn: {fileID: 628990985}
 --- !u!1 &1440878543
 GameObject:
@@ -2100,9 +2127,10 @@ GameObject:
   - component: {fileID: 1530163348}
   - component: {fileID: 1530163347}
   - component: {fileID: 1530163346}
+  - component: {fileID: 1530163352}
   m_Layer: 0
   m_Name: AIGatherer
-  m_TagString: Untagged
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2244,6 +2272,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530163352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530163345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67925310f671be047820898de360f548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  bakeryPoint: {fileID: 935918459}
+  gloomFieldPoint: {fileID: 340761291}
+  homeBase: {fileID: 1440878544}
 --- !u!1 &1646773496
 GameObject:
   m_ObjectHideFlags: 0

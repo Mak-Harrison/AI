@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class GloomField : MonoBehaviour
 {
-    public GameObject plantToSpawn; // The Gloomroot asset that appears
+    public GameObject plantToSpawn;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        // Check if the thing touching the field is the Player OR the AI
+        if (other.CompareTag("Player") || other.CompareTag("AI"))
         {
-            // Original logic: Use a Soul to sprout the root
             if (Collectable.hasSoul)
             {
                 Collectable.hasSoul = false;
@@ -16,12 +16,8 @@ public class GloomField : MonoBehaviour
                 if (plantToSpawn != null)
                 {
                     plantToSpawn.SetActive(true);
-                    Debug.Log("The Soul has bloomed into a Gloomroot!");
+                    Debug.Log("The AI or Player delivered a Soul! Gloomroot appeared.");
                 }
-            }
-            else
-            {
-                Debug.Log("The field is empty. It needs a Soul.");
             }
         }
     }
