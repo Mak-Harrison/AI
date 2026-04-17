@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|c:\\users\\harri\\onedrive\\documents\\github\\ai\\ai2\\assets\\interactionpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\assets\\interactionpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\interactionpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|c:\\users\\harri\\onedrive\\documents\\github\\ai\\ai2\\assets\\charontrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\assets\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|c:\\users\\harri\\onedrive\\documents\\github\\ai\\ai2\\assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\assets\\charontrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\charontrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\assets\\gloomfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\gloomfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\assets\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4594D072-9AF3-2D40-7099-24798E08B632}|Assembly-CSharp.csproj|solutionrelative:assets\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,6 +53,23 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T15:07:04.838Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "InteractionPoint.cs",
@@ -56,18 +77,14 @@
               "RelativeDocumentMoniker": "Assets\\InteractionPoint.cs",
               "ToolTip": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\InteractionPoint.cs",
               "RelativeToolTip": "Assets\\InteractionPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T14:26:09.966Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CharonTrade.cs",
               "DocumentMoniker": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\CharonTrade.cs",
               "RelativeDocumentMoniker": "Assets\\CharonTrade.cs",
@@ -75,12 +92,11 @@
               "RelativeToolTip": "Assets\\CharonTrade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T14:22:23.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T14:22:23.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\NewBehaviourScript.cs",
@@ -91,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GloomField.cs",
               "DocumentMoniker": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\GloomField.cs",
               "RelativeDocumentMoniker": "Assets\\GloomField.cs",
@@ -103,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Collectable.cs",
               "DocumentMoniker": "C:\\Users\\Harri\\OneDrive\\Documents\\GitHub\\AI\\AI2\\Assets\\Collectable.cs",
               "RelativeDocumentMoniker": "Assets\\Collectable.cs",
@@ -111,7 +127,8 @@
               "RelativeToolTip": "Assets\\Collectable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T14:00:54.23Z"
+              "WhenOpened": "2026-04-17T14:00:54.23Z",
+              "EditorCaption": ""
             }
           ]
         }

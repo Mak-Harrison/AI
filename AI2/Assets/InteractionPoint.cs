@@ -2,43 +2,35 @@ using UnityEngine;
 
 public class InteractionPoint : MonoBehaviour
 {
-    public enum LocationType { Bakery, Charon }
+    public enum LocationType { CowPasture, Bakery, Charon }
     public LocationType currentPoint;
 
-    public GameObject rewardToSpawn; // The Biscuit or the Obol
+    public GameObject rewardToSpawn; // Drag your Liquid Fire model here
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (currentPoint == LocationType.Bakery)
+            if (currentPoint == LocationType.CowPasture)
             {
-                // Checks the names exactly as they appear in Collectable.cs
-                if (Collectable.hasEgg && Collectable.hasGloomroot)
+                // Check if player has the starting feed
+                if (Collectable.hasFeed)
                 {
-                    // Consumes the ingredients
-                    Collectable.hasEgg = false;
-                    Collectable.hasGloomroot = false;
+                    Collectable.hasFeed = false;    // Use the feed
+                    Collectable.hasLiquidFire = true; // Give the player the fire
 
-                    // Gives the biscuit
-                    Collectable.hasBiscuit = true;
-                    rewardToSpawn.SetActive(true);
-                    Debug.Log("Bakery created a Biscuit!");
+                    if (rewardToSpawn != null)
+                    {
+                        rewardToSpawn.SetActive(true); // Make the fire model appear!
+                        Debug.Log("Cow: Fed! Liquid Fire produced.");
+                    }
+                }
+                else
+                {
+                    Debug.Log("Cow: I'm hungry. Where is the feed?");
                 }
             }
-            else if (currentPoint == LocationType.Charon)
-            {
-                // Checks for Biscuit and Fire
-                if (Collectable.hasBiscuit && Collectable.hasLiquidFire)
-                {
-                    Collectable.hasBiscuit = false;
-                    Collectable.hasLiquidFire = false;
-
-                    Collectable.hasObol = true;
-                    rewardToSpawn.SetActive(true);
-                    Debug.Log("Charon gave you an Obol!");
-                }
-            }
+            // ... (keep the Bakery and Charon logic here too)
         }
     }
 }
